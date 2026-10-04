@@ -1,0 +1,3 @@
+.link { text-decoration: none; color: #333; padding: 8px 12px; border-radius: 6px; }
+.link:hover { background-color: #f0f0f0; }
+.active-link { text-decoration: none; color: white; background-color: #007bff; padding: 8px 12px; border-radius: 6px; }
