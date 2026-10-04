@@ -1,29 +1,19 @@
-import Header from './components/Header';
-import ProfileCard from './components/ProfileCard';
-import Footer from './components/Footer';
-import './style.css'; 
+import { Routes, Route } from 'react-router';
+import Layout from './components/Layout';
+import HomePage from './pages/HomePage';
+import SkillsPage from './pages/SkillsPage';
+import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
-  const mySkills = [
-    { id: 1, label: "Math Literacy Tutoring" },
-    { id: 2, label: "Blender 3D Modeling" },
-    { id: 3, label: "Figma UI Design" },
-    { id: 4, label: "Unreal Engine 5 Level Design" }
-  ];
-
   return (
-    <div>
-      <Header title="Personal Profile" />
-      <ProfileCard 
-        name="Baimukan Aisha" 
-        role="Student at KBTU | Future Web Developer" 
-        avatarUrl="https://github.com/AishaBaimukan2006.png"
-        skills={mySkills}
-      />
-      <Footer 
-        email="baimukhanaisha79@gmail.com" 
-        githubUrl="https://github.com/AishaBaimukan2006" 
-      />
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="skills" element={<SkillsPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
   );
 }
