@@ -1,0 +1,43 @@
+/* src/styles/ui.css */
+.card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  padding: var(--space-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+}
+
+.btn {
+  padding: var(--space-small) var(--space-medium);
+  border-radius: var(--radius-main);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg-card);
+}
+
+.btn-secondary {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+}
+
+.tag {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-secondary);
+  padding: 4px var(--space-small);
+  border-radius: var(--radius-main);
+  border: 1px solid var(--color-border);
+  font-size: 0.875rem;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
 import App from './App';
+import './styles/tokens.css';
+import './styles/ui.css';
 import { LikesProvider } from './context/LikesContext';
 import './style.css';
 
