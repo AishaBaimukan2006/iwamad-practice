@@ -1,4 +1,4 @@
-import Tag from './ui/Tag'; // <-- Импортируем наш новый дизайн-компонент
+import Tag from './ui/Tag'; 
 
 type Skill = {
   id: number;
@@ -12,7 +12,7 @@ type SkillBadgeProps = {
 export default function SkillBadge({ skill }: SkillBadgeProps) {
   return (
     <li style={{ listStyleType: 'none', marginBottom: '8px' }}>
-      {/* Оборачиваем ваш текст со звездочкой в компонент Tag */}
+      
       <Tag label={`✨ ${skill.label}`} />
     </li>
   );

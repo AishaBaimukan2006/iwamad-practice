@@ -1,5 +1,5 @@
 import LikeButton from './LikeButton';
-import Card from './ui/Card'; // <-- Импортируем наш новый компонент
+import Card from './ui/Card'; 
 
 type ProfileCardProps = {
   name?: string;
@@ -13,7 +13,7 @@ export default function ProfileCard({
   avatarUrl 
 }: ProfileCardProps) {
   return (
-    // Заменяем <main> на <Card> (все стили отступов и рамок теперь берутся из ui.css)
+    
     <Card>
       {avatarUrl && (
         <img 
@@ -25,12 +25,12 @@ export default function ProfileCard({
       )}
       <h2 style={{ textAlign: 'center' }}>{name}</h2>
       
-      {/* Используем токен для цвета текста из нашей дизайн-системы */}
+      
       <p style={{ color: 'var(--color-text-secondary)', textAlign: 'center' }}>
         {role}
       </p>
 
-      {/* Оставляем ваш отступ для кнопки лайка */}
+      
       <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}>
         <LikeButton />
       </div>

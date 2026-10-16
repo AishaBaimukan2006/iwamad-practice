@@ -1,4 +1,4 @@
-/* Ваши старые стили ссылок (сохраняем, но меняем жесткий синий на наш токен) */
+
 .link { 
   text-decoration: none; 
   color: var(--color-text-main); 
@@ -13,15 +13,15 @@
 .active-link { 
   text-decoration: none; 
   color: var(--color-bg-card); 
-  background-color: var(--color-primary); /* Заменили #007bff на токен */
+  background-color: var(--color-primary); 
   padding: 8px 12px; 
   border-radius: var(--radius-main); 
 }
 
-/* Новые стили для 5 недели: Mobile First шапка */
+
 .site-header {
   display: flex;
-  flex-direction: column; /* На телефонах всё будет в колонку */
+  flex-direction: column; 
   align-items: center;
   gap: var(--space-medium);
   border-bottom: 2px solid var(--color-border);
@@ -29,7 +29,7 @@
   margin-bottom: 30px;
 }
 
-/* На планшетах и компьютерах (от 640px) шапка вытягивается в строку */
+
 @media (min-width: 640px) {
   .site-header {
     flex-direction: row; 
@@ -37,7 +37,7 @@
   }
 }
 
-/* Видимый фокус для клавиатуры (Accessibility) */
+
 .link:focus-visible,
 .active-link:focus-visible {
   outline: 3px solid var(--color-primary);
