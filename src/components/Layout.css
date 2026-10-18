@@ -1,0 +1,45 @@
+
+.link { 
+  text-decoration: none; 
+  color: var(--color-text-main); 
+  padding: 8px 12px; 
+  border-radius: var(--radius-main); 
+}
+
+.link:hover { 
+  background-color: var(--color-bg-main); 
+}
+
+.active-link { 
+  text-decoration: none; 
+  color: var(--color-bg-card); 
+  background-color: var(--color-primary); 
+  padding: 8px 12px; 
+  border-radius: var(--radius-main); 
+}
+
+
+.site-header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: var(--space-medium);
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+
+@media (min-width: 640px) {
+  .site-header {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+}
+
+
+.link:focus-visible,
+.active-link:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
