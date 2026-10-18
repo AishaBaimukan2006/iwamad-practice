@@ -13,4 +13,8 @@
   
   --radius-main: 8px;
   --radius-large: 16px;
+  --color-error: #b91c1c;
+  --space-2: 8px;
+  --space-4: 16px;
+  --radius-md: 6px;
 }

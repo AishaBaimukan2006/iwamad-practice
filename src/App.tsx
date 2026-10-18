@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import SkillsPage from './pages/SkillsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import RegisterPage from './pages/RegisterPage'; // <-- ДОБАВЛЕН ИМПОРТ
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="skills" element={<SkillsPage />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="register" element={<RegisterPage />} /> {/* <-- ДОБАВЛЕН РОУТ */}
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
