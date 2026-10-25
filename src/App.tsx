@@ -5,7 +5,8 @@ import SkillsPage from './pages/SkillsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import RegisterPage from './pages/RegisterPage'; 
-
+import EventsPage from './pages/EventsPage';
+import EventDetailsPage from './pages/EventDetailsPage';
 export default function App() {
   return (
     <Routes>
@@ -15,7 +16,10 @@ export default function App() {
         <Route path="contact" element={<ContactPage />} />
         <Route path="register" element={<RegisterPage />} /> 
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="events" element={<EventsPage />} />
+        <Route path="events/:eventId" element={<EventDetailsPage />} />
       </Route>
     </Routes>
   );
 }
+
